@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style>
+		body {
+			background-color: #F4EBE4;
+			font-family: helvetica neue, arial, sans-serif;
+			padding-top: 8%;
+			padding-right: 0%;
+			width: 100%;
+		}
+		
+		
+	.number {
+		display: inline-block;
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color: #F7931E;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		float: left;
+		font-size: 50px;
+		padding: 10px;
+		margin: 15px;
+		font-weight: 800;
+	}
+	
+	.number:hover {
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color: #000000;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		float: left;
+		font-size: 50px;
+		padding: 0px;
+		margin: 15px;
+		font-weight: 800;
+	}
+	
+
+	.operator {
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color: #04A4D0;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		float: left;
+		font-size: 50px;
+		padding: 0px;
+		margin: 15px;
+		font-weight: 800;
+	}
+	
+		.operator:hover {
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color: #000000;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		float: left;
+		font-size: 50px;
+		padding: 0px;
+		margin:15px;
+		font-weight: 800;
+			
+	}
+	
+		.operatorE {
+		outline: 0;
+		border:none;
+		color: #FFFFFF;
+		background-color: #1AA858;
+		border-radius: 100px;
+		width:90px;
+		height: 90px;
+		font-size: 50px;
+		padding: 0px;
+		margin: 15px;
+		font-weight: 800;
+		line-height: -50px;
+	}
+	
+	.operatorE:hover {
+		outline: 0;
+		border:none;
+		color: #FFFFFF;
+		background-color: #106B38;
+		border-radius: 100px;
+		width:90px;
+		height: 90px;
+		font-size: 50px;
+		padding: 0px;
+		margin: 15px;
+		font-weight: 800;
+	}
+
+		.operatorC {
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color: #FF0000;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		font-size: 50px;
+		padding: 0px;
+		margin: 15px;
+		font-weight: 800;
+	}
+	
+	.operatorC:hover {
+		outline: 0;
+		border: none;
+		color: #FFFFFF;
+		background-color: #A50000;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		font-size: 50px;
+		padding: 0px;
+		margin: 15px;
+		font-weight: 800;
+	}
+	#myCalculator {
+		float: right;
+		width: 52%;
+		}
+		
+	#display {
+		outline: 0;
+		border: none;
+		color: #000000;
+		background-color: #F4EBE4;
+		border-radius: 10px;
+		width: 45%;
+		float: left;
+		font-size: 90px;
+		padding-left: 20px;
+		margin: 5px;
+		font-weight: 700
+	}
+	
+	.inputrow {
+		float: left;
+		padding: 0px;
+		width: 100%;
+		position: relative;
+	}
+		.column {
+		width: 120px;
+		float: left;
+		margin-left: 20px;
+		position: fixed;
+
+		}
+		
+		.column2 {
+		width: 360px;
+		float: left;
+		margin-left: 146px;
+		position: fixed;
+
+		}
+		
+		.column4 {
+		width: 360px;
+		float: left;	
+		margin-left: 272px;
+		position: fixed;
+		}
+		
+		.column5 {
+		width: 360px;
+		float: left;
+		margin-left: 399px;
+		position: fixed;
+		}
+		
+		.column3 {
+		width: 500px;
+		float: left;
+		margin-top: 120px;
+		margin-left: 525px;
+		position: fixed;
+		
+		}
+		
+		.numberblank {
+		outline: 0;
+		border: none;
+		color: #F7931E;
+		background-color: #F7931E;
+		border-radius: 100px;
+		width: 90px;
+		height: 90px;
+		float: left;
+		font-size: 50px;
+		padding: 15px;
+		margin: 15px;
+		font-weight: 700;
+		}
+		
+	
+		.backgroundlines {
+			z-index: -1;
+			position: fixed;
+			z-index: -1;
+			left: 0;
+			top: 0px;
+			margin-left: 0
+		}
+		
+		
+</style>
+<title>Massimo Calculator</title>
+</head>
+
+<body>
+	<form name="calculator">
+		 
+		 <div id="top_display">
+				<input type="text" name="display" id="display" disabled>
+			</div>
+		 
+		 <div id="myCalculator">
+		
+		 <div class="column">
+		 <input type="button" class="operatorC" value="C" onClick="calculator.display.value =''">
+		<input type="button" class="operatorE" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+		 
+		 </div>
+		 
+		 <div class="column2">
+				 <div class="inputrow">
+				<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">
+					</div>
+			 		 <div class="inputrow">
+			 	<input type="button" class="number" value="4" onclick="calculator.display.value +='4'">
+			 </div>
+			 		 <div class="inputrow">
+			 	<input type="button" class="number" value="1" onclick="calculator.display.value +='1'">
+			 </div>
+			 		 <div class="inputrow">
+				<input type="button" class="numberblank" value="0" >
+			 </div>
+				
+ 		 </div>
+
+	
+ <div class="column4">
+	 		 <div class="inputrow">
+				<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">
+	 </div>
+	 		 <div class="inputrow">
+				<input type="button" class="number" value="5" onclick="calculator.display.value +='5'">
+	 </div>
+	 		 <div class="inputrow">
+	 			<input type="button" class="number" value="2" onclick="calculator.display.value +='2'">
+	 </div>
+	 		 <div class="inputrow">
+				<input type="button" class="number" value="0" onclick="calculator.display.value +='0'">
+	 </div>
+			
+			 </div>
+			 
+	 <div class="column5">
+		 		 <div class="inputrow">
+		 		<input type="button" class="number" value="9" onclick="calculator.display.value +='9'">
+		 </div>
+		 		 <div class="inputrow">
+				<input type="button" class="number" value="6" onclick="calculator.display.value +='6'">		
+		 </div>
+		 		 <div class="inputrow">
+				<input type="button" class="number" value="3" onclick="calculator.display.value +='3'">
+		 </div>
+		 		 <div class="inputrow">
+		 		<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
+		 </div>
+			 </div>
+
+		
+		  <div class="column3">
+		 <div class="inputrow">
+				<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'">
+			</div>
+	<div class="inputrow">
+				<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value +='*'">
+ 			</div>
+		 <div class="inputrow">
+				<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
+			</div>
+		 <div class="inputrow">
+				<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
+			</div>	
+		 </div>
+		 
+			 
+			 <div class="backgroundlines">
+
+				 <!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1683px"
+	 height="1132.08px" viewBox="0 0 1683 1132.08" style="overflow:visible;enable-background:new 0 0 1683 1132.08;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F4EBE4;}
+	.st1{fill:#04A4D0;}
+	.st2{fill:#F7931E;}
+	.st3{fill:none;stroke:#838BC5;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<defs>
+</defs>
+<rect class="st0" width="1683" height="1132.08"/>
+<g>
+	
+		<rect x="1344.77" y="284.87" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 2797.2407 1416.9487)" class="st1" width="107.7" height="847.22"/>
+	
+		<rect x="1510.33" y="117.29" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 3193.3271 337.9884)" class="st1" width="172.67" height="103.41"/>
+	<path class="st1" d="M1344.77,284.87c0,0-7.03-167.57,165.55-167.57V220.7c0,0-57.86-4.46-57.86,64.17H1344.77z"/>
+</g>
+<rect x="1092.48" y="0.08" class="st2" width="107.7" height="1132"/>
+<rect x="1219.08" y="0.08" class="st2" width="107.7" height="1132"/>
+<g>
+	<rect x="965.96" y="0.08" class="st2" width="107.7" height="500.33"/>
+	<rect x="0" y="691.19" class="st2" width="782.28" height="106.75"/>
+	<path class="st2" d="M965.96,500.42c0,197.4-183.68,190.77-183.68,190.77v106.75c310.44,0,291.38-297.52,291.38-297.52H965.96z"/>
+</g>
+<g>
+	<rect x="840.14" y="0.08" width="107.7" height="500.33"/>
+	<rect x="0" y="566.66" width="782.28" height="106.75"/>
+	<path d="M947.83,500.42c0,0,7.03,172.99-165.55,172.99V566.66c0,0,57.86,4.61,57.86-66.24H947.83z"/>
+</g>
+<path class="st3" d="M966.31,563.84"/>
+<path class="st3" d="M966.31,472.89"/>
+</svg>
+
+
+		 </div> 
+			 </div>
+		</form>
+</body>
+</html>

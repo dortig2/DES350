@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 1278.64" style="enable-background:new 0 0 1366 1278.64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:none;}
+	.st2{fill:#E6E6E6;}
+	.st3{font-family:'PerpetuaTitlingMT-Light';}
+	.st4{font-size:138.4789px;}
+	.st5{letter-spacing:118;}
+	.st6{letter-spacing:120;}
+	.st7{font-size:62.9449px;}
+</style>
+<g id="Layer_1_1_">
+</g>
+<g id="background">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="683.82" y1="1278" x2="683.82" y2="-0.64" gradientTransform="matrix(1 0 0 -1 0 1278)">
+		<stop  offset="1.240079e-03" style="stop-color:#251F39"/>
+		<stop  offset="0.1963" style="stop-color:#482D45"/>
+		<stop  offset="0.3968" style="stop-color:#64394E"/>
+		<stop  offset="0.5983" style="stop-color:#784155"/>
+		<stop  offset="0.7995" style="stop-color:#844659"/>
+		<stop  offset="1" style="stop-color:#88485A"/>
+	</linearGradient>
+	<rect class="st0" width="1367.64" height="1278.64"/>
+</g>
+<g id="text">
+	<rect x="498.59" y="105.2" class="st1" width="1013.41" height="414.69"/>
+	<text transform="matrix(1 0 0 1 498.5923 204.7642)" class="st2 st3 st4 st5"> </text>
+	<text transform="matrix(1 0 0 1 664.0023 204.7642)" class="st2 st3 st4">GREAT  </text>
+	<text transform="matrix(1 0 0 1 498.5923 325.4042)" class="st2 st3 st4 st5"> </text>
+	<text transform="matrix(1 0 0 1 664.0023 325.4042)" class="st2 st3 st4 st6"> </text>
+	<text transform="matrix(1 0 0 1 832.1323 325.4042)" class="st2 st3 st4">SMOKY  </text>
+	<text transform="matrix(1 0 0 1 498.5923 446.0542)" class="st2 st3 st4">MOUNTAINS</text>
+	<g>
+		<rect x="662.59" y="41.48" class="st1" width="420.66" height="98.03"/>
+		<text transform="matrix(1 0 0 1 662.5884 86.7388)" class="st2 st3 st7">Visit</text>
+	</g>
+	<rect x="838.05" y="467.3" class="st1" width="513.78" height="69.14"/>
+	<text transform="matrix(1 0 0 1 838.0547 512.5518)" class="st2 st3 st7">NATIONAL PARK</text>
+</g>
+</svg>

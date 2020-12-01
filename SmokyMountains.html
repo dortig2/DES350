@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smoky Mountains National Park</title>
+	
+<link rel="stylesheet" href="https://use.typekit.net/nml0fid.css">
+<link rel="stylesheet" href="https://use.typekit.net/nml0fid.css">
+	
+</head>
+	
+	<style>
+	
+		.aboutthepark {
+            position: absolute; 
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+			margin-left: 5%;
+            margin-top: 1500px;
+            color: #e6e6e6;
+            z-index: 10;
+		}	
+		
+		.abouttheparkdescription {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 12.5%;
+            margin-top: 1580px;
+			line-height: 30px;
+            color: #e6e6e6;
+            z-index: 10;
+            position: absolute; 
+
+			
+		}
+		
+		.parkinfo {
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+			width: 50%;
+			margin-left: 50%;
+            margin-top: 2040px;
+			line-height: 80px;
+            color: #e6e6e6;
+             z-index: 10;
+            position: absolute; 
+
+
+		}
+		
+		.destinationhikes {
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+            margin-top: 2540px;
+			margin-left: 8%;
+            color: #e6e6e6;
+            z-index: 10;
+            position: absolute; 
+
+		}
+		
+		.destinationhikesdescription {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 8%;
+            margin-top: 2620px;
+            line-height: 30px;
+            color: #e6e6e6;
+            z-index: 10;
+            position: absolute; 
+
+
+		}
+		
+		.wildlifeviewing {
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+			width: 50%;
+			margin-left: 43%;
+            margin-top: 2850px;
+            color: #e6e6e6;
+             z-index: 10;
+            position: absolute; 
+		}
+		
+		.wildlifeviewingdescription {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 43%;	
+			line-height: 30px;
+            margin-top: 2930px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+
+		}
+		
+		.scenicroutes {
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+			width: 48%;
+			margin-left: 18.5%;
+			line-height: 30px;
+            margin-top: 3150px;
+            color: #e6e6e6;
+            z-index: 10;
+            position: absolute; 
+
+		}
+		
+		.scenicroutesdescription {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 18.5%;
+			line-height: 30px;
+            margin-top: 3210px;
+            color: #e6e6e6;
+            z-index: 10;
+            position: absolute; 
+
+		}
+		
+		.obergatlinburg {
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+			width: 48%;
+			margin-left: 50%;
+            margin-top: 3380px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+		}
+		
+		.obergatlinburgdescription {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 50%;
+			line-height: 30px;
+            margin-top: 3460px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+		}
+		
+		.clingmansdome {
+			font-family: span, serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 60px;
+			width: 48%;
+			margin-left: 25%;
+            margin-top: 3800px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+		}
+		
+		.clingmansdomedescription {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 25%;
+			line-height: 30px;
+            margin-top: 3880px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+		}
+		
+		.ending {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 50%;
+			line-height: 30px;
+            margin-top: 4580px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+		}
+		
+		a {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 50%;
+			line-height: 30px;
+            margin-top: 4730px;
+            color: #1a1a1a;
+            z-index: 10;
+            position: absolute; 
+            text-decoration: none;
+
+		}
+        
+        a:hover {
+             color: #e6e6e6;
+        }
+		
+		.infofromtitle {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 37.5%;
+			line-height: 30px;
+            margin-top: 4880px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+
+		}
+		
+		.infofrom {
+			font-family: proxima-nova, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			font-size: 21px;
+			width: 48%;
+			margin-left: 37.5%;
+			line-height: 30px;
+            margin-top: 4910px;
+            color: #e6e6e6;
+                z-index: 10;
+            position: absolute; 
+		}
+        
+        .sky {
+            position: fixed; 
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -100;
+        }
+		
+        .mountains {
+            position: absolute; 
+            top: 500px;
+            left: 0px;
+            width: 102%;
+            z-index: 1;
+        }
+        
+         .smoke1 {
+            position: absolute; 
+            top: 1600px;
+            left: 0px;
+            margin-left: 65%;
+            width: 40%;
+            z-index: 100;
+    animation-name: movesmoke1;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movesmoke1 {
+		
+		
+		  	0% {left: 0px;
+         }
+			50% {left: -70px;
+           }
+			100% {left: 0px;
+          } }
+        
+		
+         .smoke2 {
+            position: absolute; 
+            top: 2200px;
+            left: 0px;
+            margin-left: -15%;
+            width: 50%;
+            z-index: 100;
+             animation-name: movesmoke2;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movesmoke2 {
+		
+		
+		  	0% {left: 0px;
+            }
+			50% {left: 100px;
+           }
+			100% {left: 0px;
+            } }
+        
+        
+        .smoke3 {
+            position: absolute; 
+            top: 2600px;
+            left: 0px;
+            margin-left: 55%;
+            width: 50%;
+            z-index: 100;
+            animation-name: movesmoke3;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movesmoke3 {
+		
+		
+		  	0% {left: 0px;
+            }
+			50% {left: -75px;
+            }
+			100% {left: 0px;
+            } }
+        
+        
+        .smoke4 {
+            position: absolute; 
+            top: 3500px;
+            left: 0px;
+            margin-left: -5%;
+            width: 50%;
+            z-index: 100;
+            animation-name: movesmoke4;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movesmoke4 {
+		
+		
+		  	0% {left: 0px;
+            }
+			50% {left: -100px;
+         }
+			100% {left: 0px;
+            } }
+        
+        
+         .smoke5 {
+            position: absolute; 
+            top: 4600px;
+            left: 0px;
+            margin-left: -5%;
+            width: 50%;
+            z-index: 100;
+             animation-name: movesmoke5;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movesmoke5 {
+		
+		
+		  	0% {left: 0px;
+            }
+			50% {left: -100px;
+       }
+			100% {left: 0px;
+            } }
+        
+        
+        .smoke6 {
+            position: absolute; 
+            top: 4200px;
+            left: 0px;
+            margin-left: 55%;
+            width: 50%;
+            z-index: 100;
+            animation-name: movesmoke6;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movesmoke6 {
+		
+		
+		  	0% {left: 0px;
+           }
+			50% {left: -100px;
+            }
+			100% {left: 0px;
+          } }
+        
+		
+	</style>
+
+<body>
+	
+	<div class="aboutthepark">
+	About the park
+	</div>
+	
+	<div class="abouttheparkdescription">
+	The Great Smoky Mountains National Park, colloquially known as “The Smokies” is the nation’s most visited national park gathering around 11 million visitors per year. This 522,427 acre national park includes a remnants of the Southern Appalachian Mountains, and spreads across the states of Tennessee and North Carolina. <br>
+<br>
+Its most recognizable word, and commonly atrophied characteristic, “Smoky” derives from the natural fog that is often seen over the range of mountains throughout, and can be seen from a distance. The smoke itself is caused from the surrounding vegetation which exhales organic chemicals that have a high vapor pressure at relatively normal temperatures. 
+	</div>
+	
+	<div class="parkinfo">
+	Est. June 15, 1934 <br>
+	North Carolina, Tennessee <br>
+	83.4985° W <br>
+	35.5628° N <br>
+	816 mi² <br>
+	</div>
+	
+	<div class="destinationhikes">
+	Destination Hikes
+	</div>
+	
+	<div class="destinationhikesdescription">
+This park also offers some amazing destination hikes, such as; Charlies Bunion, Alum Cave Bluffs, Rainbow Falls, and Chimney Tops. These hikes can provide exquisite views throughout the hike itself, and lead to even more beautiful views at their designated locations, including waterfalls, mountaintop views, and a variety of wildlife. 
+	</div>
+	
+	<div class="wildlifeviewing">
+	Wildlife Viewing
+	</div>
+	
+	<div class="wildlifeviewingdescription">
+The park also offers amazing wildlife viewing ranging from its diversity in wildflowers which includes over 1,500 different kinds of plants, and locations where wild animals can be seen, including black bears, elk, white-tailed deer, and many more.
+	</div>
+	
+	<div class="scenicroutes">
+	Scenic Routes
+	</div>
+	
+	<div class="scenicroutesdescription">
+	Whether you’re a hiker or prefer to drive, the park also offers scenic driving routes as well, an example of that being the Roaring Fork Motor Nature Trail.
+	</div>
+	
+	<div class="obergatlinburg">
+	Ober Gatlinburg
+	</div>
+	
+	<div class="obergatlinburgdescription">
+	This national park is also considered a temperate forest, meaning that throughout the four seasons, the park’s atmosphere will change, and so will it’s activities. One of it’s most commonly known activity hubs that changes in accordance to the seasons is: Ober Gatlinburg, this location offers a variety of activities to do depending on the season. Find yourself at an amazing ski resort throughout the winter months, and alternatively, at an outdoor water park throughout the summer months. However, whatever season it may be, it also offers a variety of indoor activities that are available year round.
+	</div>
+	
+	<div class="clingmansdome">
+Clingmans Dome
+	</div>
+	
+	<div class="clingmansdomedescription">
+	Clingmans Dome, also known as the parks highest point offers an amazing 360 degree view of the amazing park scenery, and on a clear day, the view can range to as far as 100 miles offering views of seven surrounding states which include: Tennessee, North Carolina, Kentucky, South Carolina, Virginia, Alabama, and Mississippi. 
+	</div>
+	
+	<div class="ending">
+So if you ever find yourself wanting to experience a national park with a variety to offer and amazing views, take a trip on down to the Great Smoky Mountains!
+</div>
+	
+        <a href="https://www.nps.gov/grsm/index.htm" target="_self">Click here to visit the official website of <br>
+the Great Smoky Mountains</a>
+
+	
+	<div class="infofromtitle">
+Information from
+	</div>
+	
+	<div class="infofrom">
+https://www.nps.gov/grsm/index.htm <br>
+https://www.cabinsofthesmokymountains.com/things-to-do/ clingmans-dome/ <br>
+https://travel.usnews.com/Great_Smoky_Mountains_National_Park_TN/Things_To_Do/ <br>
+	</div>
+	
+	<div class="sky">
+<img src="sky.svg" width: 100% alt="sky"/>
+</div>
+
+	<div class="mountains">
+<img src="mountains.svg" width: 100% alt="mountains"/>
+</div>
+    
+    <div class="smoke1">
+<img src="smoke1.svg" width: 100% alt="smoke1"/>
+</div>
+    
+    <div class="smoke2">
+<img src="smoke2.svg" width: 100% alt="smoke2"/>
+</div>
+    
+     <div class="smoke3">
+<img src="smoke3.svg" width: 100% alt="smoke3"/>
+</div>
+    
+    <div class="smoke4">
+<img src="smoke2.svg" width: 100% alt="smoke4"/>
+</div>
+    
+     <div class="smoke5">
+<img src="smoke2.svg" width: 100% alt="smoke5"/>
+</div>
+    
+     <div class="smoke6">
+<img src="smoke3.svg" width: 100% alt="smoke6"/>
+</div>
+    
+    <div class="parallax">
+    <a title="rellax.min.js" href="https://github.com/dortig2/rellax/blob/master/rellax.min.js"></a> 
+    </div>
+    
+    <div class="mountains" data-rellax-speed="-10">
+</div>
+    
+    
+	
+</body>
+</html>
